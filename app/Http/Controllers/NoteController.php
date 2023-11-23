@@ -9,4 +9,8 @@ class NoteController extends Controller
     public function index() {
         return view('send');
     }
+
+    public function fill($stamp) {
+        return 'OK';
+    }
 }

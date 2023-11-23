@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #FCEDC7;
+  --butterfly-color: #012726;
+  --daisy-color: #A1A7B2;
+  --autumn-color: #4A2F27;
+  --heart-color: #A47C7A;
+  --moon-color: #1A2940;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
 .home-section,
 .send-section {
   height: 70vh;
@@ -13,4 +26,55 @@
   padding: 45px;
   text-decoration: none;
   width: 270px;
+}
+
+.stamp-btn {
+  display: block;
+  text-align: center;
+  margin: 18px auto;
+  text-decoration: none;
+  padding: 18px 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.205);
+  width: 80%;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+  color: black;
+  border: 1px solid black;
+}
+
+.butterfly-btn:hover {
+  color: var(--primary-color);
+  background: var(--butterfly-color);
+  border: 1px solid var(--butterfly-color);
+}
+
+.daisy-btn:hover {
+  color: var(--primary-color);
+  background: var(--daisy-color);
+  border: 1px solid var(--daisy-color);
+}
+
+.autumn-btn:hover {
+  color: var(--primary-color);
+  background: var(--autumn-color);
+  border: 1px solid var(--autumn-color);
+}
+
+.heart-btn:hover {
+  color: var(--primary-color);
+  background: var(--heart-color);
+  border: 1px solid var(--heart-color);
+}
+
+.moon-btn:hover {
+  color: var(--primary-color);
+  background: var(--moon-color);
+  border: 1px solid var(--moon-color);
+}
+
+.stamp-img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
 }
