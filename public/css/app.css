@@ -1,0 +1,16 @@
+.home-section,
+.send-section {
+  height: 70vh;
+}
+
+.route-btn {
+  border: 1px darkblue solid;
+  border-radius: 20px;
+  color: black;
+  display: block;
+  font-size: 25px;
+  margin: 20px;
+  padding: 45px;
+  text-decoration: none;
+  width: 270px;
+}
