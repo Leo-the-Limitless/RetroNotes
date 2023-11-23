@@ -20,4 +20,4 @@ Route::get('/', function () {
 
 Route::get('/send', [NoteController::class, 'index']);
 
-Route::get('/send/{stamp}', [NoteController::class, 'fill']);
+Route::get('/send/{stamp}', [NoteController::class, 'fill'])->middleware('checkStamp');
