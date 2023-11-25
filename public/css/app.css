@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #FCEDC7;
+  --primary-color: #FEF6F1;
   --butterfly-color: #012726;
   --daisy-color: #A1A7B2;
   --autumn-color: #4A2F27;
@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--primary-color);
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .home-section,
@@ -16,8 +17,12 @@ body {
   height: 70vh;
 }
 
+.retro-card {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
 .route-btn {
-  border: 1px darkblue solid;
   border-radius: 20px;
   color: black;
   display: block;
@@ -26,6 +31,17 @@ body {
   padding: 45px;
   text-decoration: none;
   width: 270px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.route-btn.send-btn {
+  border: 1px #7AA4D6 solid;
+  background: #7AA4D6;
+}
+
+.route-btn.receive-btn {
+  border: 1px #FF656E solid;
+  background: #FF656E;
 }
 
 .stamp-btn {
