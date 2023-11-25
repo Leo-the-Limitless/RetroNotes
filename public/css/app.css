@@ -17,7 +17,7 @@ body {
 
 .home-section,
 .send-section {
-  height: 70vh;
+  height: 75vh;
 }
 
 .retro-card {
@@ -30,10 +30,23 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  border-bottom: 1px solid var(--send-color);
   padding: 9px;
+}
+
+.signboard.send-sb {
+  border-bottom: 1px solid var(--send-color);
   background: var(--send-color);
   box-shadow: 0px 2px 2px black;
+}
+
+.signboard.title-sb {
+  border-bottom: 1px solid black;
+  background: transparent;
+  box-shadow: 0px 1px 2px black;
+}
+
+.dots {
+  margin-right: 5px;
 }
 
 .form-control {
@@ -51,6 +64,10 @@ body {
   text-decoration: none;
   width: 270px;
   box-shadow: var(--box-shadow);
+}
+
+.route-btn:hover {
+  box-shadow: 5px 5px 11px black;
 }
 
 .route-btn.send-btn {

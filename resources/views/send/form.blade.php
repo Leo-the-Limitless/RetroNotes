@@ -4,7 +4,7 @@
 
 <!-- <h1>{{$stamp}}</h1> -->
 <div class="mx-auto retro-card w-75">
-  <h3 class="signboard">Send</h3>
+  <h3 class="signboard send-sb">Send</h3>
   <form action="/sent" method="post" class="p-4 pb-3">
     <div class="form-group row mb-3">
       <label for="sender" class="col-sm-2 col-form-label">Sender</label>
