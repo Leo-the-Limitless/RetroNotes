@@ -6,6 +6,7 @@
 <div class="mx-auto retro-card w-75">
   <h3 class="signboard send-sb">Send</h3>
   <form action="/sent" method="post" class="p-4 pb-3">
+    @csrf
     <div class="form-group row mb-3">
       <label for="sender" class="col-sm-2 col-form-label">Sender</label>
       <div class="col-sm-10">
@@ -21,7 +22,7 @@
     <div class="form-group row mb-3">
       <label for="note" class="col-sm-2 col-form-label">Note</label>
       <div class="col-sm-10">
-        <textarea name="note" id="note" style="white-space: pre-wrap; resize: none;" class="form-control" rows="8" cols="50" placeholder="Write your note here ..."></textarea>
+        <textarea name="note" id="tabbable-note" style="white-space: pre-wrap; resize: none;" class="form-control" rows="8" cols="50" placeholder="Write your note here ..."></textarea>
       </div>
     </div>
     <div class="form-group row mb-3">
