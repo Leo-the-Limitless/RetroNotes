@@ -10,25 +10,29 @@
     <div class="form-group row mb-3">
       <label for="sender" class="col-sm-2 col-form-label">Sender</label>
       <div class="col-sm-10">
-        <input name="sender" type="text" class="form-control" id="sender" placeholder="Sender">
+        <input name="sender" type="text" class="form-control" id="sender" placeholder="Sender" autocomplete="off">
       </div>
     </div>
     <div class="form-group row mb-3">
       <label for="receiver" class="col-sm-2 col-form-label">Receiver</label>
       <div class="col-sm-10">
-        <input name="receiver" type="text" class="form-control" id="receiver" placeholder="Receiver">
+        <input name="receiver" type="text" class="form-control" id="receiver" placeholder="Receiver" autocomplete="off">
       </div>
     </div>
     <div class="form-group row mb-3">
       <label for="note" class="col-sm-2 col-form-label">Note</label>
       <div class="col-sm-10">
-        <textarea name="note" id="tabbable-note" style="white-space: pre-wrap; resize: none;" class="form-control" rows="8" cols="50" placeholder="Write your note here ..."></textarea>
+        <textarea name="note" id="tabbable-note" 
+        style="white-space: pre-wrap; resize: none;" 
+        class="form-control" rows="8" cols="50" 
+        placeholder="Write your note here ..." autocomplete="off"></textarea>
       </div>
     </div>
     <div class="form-group row mb-3">
       <label for="key" class="col-sm-2 col-form-label">Key</label>
       <div class="col-sm-10">
-        <input name="key" type="password" class="form-control" id="key" placeholder="Seal your note with a 🔑">
+        <input name="key" type="number" class="form-control" id="key" 
+        placeholder="A 6-digit-key to seal your note" autocomplete="off">
       </div>
     </div>
     <div class="d-flex justify-content-end">
