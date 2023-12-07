@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/send', [NoteController::class, 'index']);
 
 Route::get('/send/{stamp}', [NoteController::class, 'fill'])->middleware('checkStamp');
+Route::post('/send/{stamp}', [NoteController::class, 'filled'])->middleware('checkStamp');

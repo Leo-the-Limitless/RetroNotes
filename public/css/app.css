@@ -20,6 +20,20 @@ body {
   height: 75vh;
 }
 
+.error {
+  width: 75%;
+  margin: 0 auto 10px;
+  padding: 10px 5px;
+}
+
+.error li {
+  list-style: none;
+  border-left: 4px solid crimson;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px 0 5px 9px;
+}
+
 .retro-card {
   border: 1px solid black;
   box-shadow: var(--box-shadow);
@@ -67,7 +81,7 @@ body {
 }
 
 .route-btn:hover {
-  box-shadow: 5px 5px 11px black;
+  box-shadow: 6px 6px 11px black;
 }
 
 .route-btn.send-btn {
