@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\SendFormRequest;
+use App\Http\Requests\ReceiveFormRequest;
 use App\Models\Note;
 
 class NoteController extends Controller
@@ -55,6 +56,28 @@ class NoteController extends Controller
     }
 
     public function receive() {
-        
+        return view('receive.receive');
     }
+
+    public function received(ReceiveFormRequest $request)
+    {
+        $note = Note::find($request->noteNum);
+
+        if (is_null($note)) {
+            return redirect()->back()->withErrors(['error' => 'Invalid note number'])->withInput();
+        }
+
+        if ($note->sender !== $request->sender) {
+            return redirect()->back()->withErrors(['error' => 'Invalid sender'])->withInput();
+        } elseif ($note->receiver !== $request->receiver) {
+            return redirect()->back()->withErrors(['error' => 'Invalid receiver'])->withInput();
+        } elseif ($note->key !== $request->key) {
+            return redirect()->back()->withErrors(['error' => 'Invalid key'])->withInput();
+        }
+
+        return view('receive.received', [
+            'note' => $note,
+        ]);
+    }
+
 }

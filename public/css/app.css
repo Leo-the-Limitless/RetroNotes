@@ -55,6 +55,12 @@ body {
   box-shadow: 0px 2px 2px black;
 }
 
+.signboard.receive-sb {
+  border-bottom: 1px solid var(--receive-color);
+  background: var(--receive-color);
+  box-shadow: 0px 2px 2px black;
+}
+
 .signboard.title-sb {
   border-bottom: 1px solid black;
   background: transparent;
@@ -205,4 +211,13 @@ body {
 
 .submit-btn.send-btn:hover {
   background: var(--send-color);
+}
+
+.submit-btn.receive-btn:hover {
+  background: var(--receive-color);
+}
+
+.read-btn:hover {
+  background: #F4E5BA;
+  box-shadow: var(--letter-stamp-shadow);
 }

@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/send', [NoteController::class, 'send']);
 Route::get('/receive', [NoteController::class, 'receive']);
+Route::post('/receive', [NoteController::class, 'received']);
 
 Route::get('/send/{stamp}', [NoteController::class, 'fill'])->middleware('checkStamp');
 Route::post('/send/{stamp}', [NoteController::class, 'filled'])->middleware('checkStamp');

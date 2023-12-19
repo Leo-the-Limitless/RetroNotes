@@ -2,8 +2,7 @@
 
 @section('content')
 
-<h3 class="text-center mx-auto mb-3">Note Sent!</h3>
-<h6 class="text-center mx-auto mb-3" style="color: crimson;">Note them down or snap a pic! Your person will need these detials to receive your note.<i class="fa-solid fa-circle-exclamation"></i></h6>
+<h3 class="text-center mx-auto mb-3">Note Received!</h3>
 <div class="mx-auto letter-preview">
   <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt="" class="letter-stamp">
   <div>
@@ -31,12 +30,14 @@
     </p>
   </div>
 </div>
-<div class="d-flex justify-content-end mx-auto" style="width: 55%;">
-  <a href="/">
-    <button class="mt-4 p-1 px-4 submit-btn send-btn">
-        Home <i class="fa-solid fa-angles-right ms-1"></i>
+<div class="d-flex justify-content-center">
+  <form action='/read/{{ $note['noteNumber'] }}' method="post">
+    <input type="text" class="d-none" name="noteNumber" value={{ $note['noteNumber'] }}>
+    <input type="text" class="d-none" name="key" value={{ $note['key'] }}>
+    <button class="mt-4 p-1 px-4 read-btn">
+        Read
     </button>
-  </a>
+  </form>
 </div>
 
 @endsection
