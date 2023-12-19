@@ -10,15 +10,14 @@ class Note extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['sender', 'receiver', 'stamp', 'key', 'note'];
+    protected $fillable = ['sender', 'receiver', 'stamp', 'key', 'note', 'noteNumber'];
 
     protected static function boot()
     {
         parent::boot();
 
         static::saving(function ($model) {
-            $model->key = Hash::make($model->key);
-            $model->note = Hash::make($model->note);
+            $model->note = encrypt($model->note);
         });
     }
 }

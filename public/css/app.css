@@ -8,6 +8,8 @@
   --send-color: #7AA4D6;
   --receive-color: #FF656E;
   --box-shadow: 5px 5px 5px black;
+  --text-shadow: 0px 1px 3px black;
+  --letter-stamp-shadow: 2px 2px 3px black;
 }
 
 body {
@@ -92,6 +94,56 @@ body {
 .route-btn.receive-btn {
   border: 1px var(--receive-color) solid;
   background: var(--receive-color);
+}
+
+.letter-preview {
+  width: 55%;
+  border: 3px solid #64512d;
+  height: 400px;
+  background: #F4E5BA;
+  box-shadow: var(--box-shadow);
+}
+
+.title-row {
+  position: relative;
+  top: 190px;
+  margin-left: 9px;
+  width: 90%;
+}
+
+.details-row {
+  position: relative;
+  top: 170px;
+  margin-left: 18px;
+  width: 95%;
+}
+
+.credentials {
+  padding: 15px 0 0 18px;
+  text-shadow: var(--text-shadow);
+}
+
+.key {
+  text-align: right;
+}
+
+.key-number {
+  text-align: right;
+}
+
+.letter-stamp {
+  width: 100px;
+  float: right;
+  margin: 9px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: var(--letter-stamp-shadow);
+}
+
+.letter-names {
+  display: inline-block;
+  margin: 0;
 }
 
 .stamp-btn {

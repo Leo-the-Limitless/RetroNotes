@@ -15,15 +15,15 @@
     <a href="/send/daisy" class="stamp-btn daisy-btn">Daisy</a>
   </div>
   <div class="col">
-    <img src="{{ asset('images/stamps/fall.png') }}" alt="Fall-stamp" class="stamp-img">
+    <img src="{{ asset('images/stamps/autumn.png') }}" alt="Fall-stamp" class="stamp-img">
     <a href="/send/autumn" class="stamp-btn autumn-btn">Autumn</a>
   </div>
   <div class="col">
-    <img src="{{ asset('images/stamps/love.png') }}" alt="Love-stamp" class="stamp-img">
+    <img src="{{ asset('images/stamps/heart.png') }}" alt="Love-stamp" class="stamp-img">
     <a href="/send/heart" class="stamp-btn heart-btn">Heart</a>
   </div>
   <div class="col">
-    <img src="{{ asset('images/stamps/night sky.png') }}" alt="Night-sky-stamp" class="stamp-img">
+    <img src="{{ asset('images/stamps/moon.png') }}" alt="Night-sky-stamp" class="stamp-img">
     <a href="/send/moon" class="stamp-btn moon-btn">Moon</a>
   </div>
   

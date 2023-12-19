@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('notes', function (Blueprint $table) {
             $table->id();
 
+            $table->string('noteNumber', 10)->nullable(true);
             $table->string('sender', 100)->nullable(false);
             $table->string('receiver', 100)->nullable(false);
 
