@@ -27,4 +27,4 @@ Route::post('/send/{stamp}', [NoteController::class, 'filled'])->middleware('che
 
 Route::get('/sent', [NoteController::class, 'sent']);
 
-Route::get('/test', [NoteController::class, 'test']);
+Route::post('/read/{noteNumber}', [NoteController::class, 'read']);

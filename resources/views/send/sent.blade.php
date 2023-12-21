@@ -33,7 +33,7 @@
 </div>
 <div class="d-flex justify-content-end mx-auto" style="width: 55%;">
   <a href="/">
-    <button class="mt-4 p-1 px-4 submit-btn send-btn">
+    <button class="mt-4 p-1 px-4 read-btn">
         Home <i class="fa-solid fa-angles-right ms-1"></i>
     </button>
   </a>

@@ -32,6 +32,7 @@
 </div>
 <div class="d-flex justify-content-center">
   <form action='/read/{{ $note['noteNumber'] }}' method="post">
+    @csrf
     <input type="text" class="d-none" name="noteNumber" value={{ $note['noteNumber'] }}>
     <input type="text" class="d-none" name="key" value={{ $note['key'] }}>
     <button class="mt-4 p-1 px-4 read-btn">

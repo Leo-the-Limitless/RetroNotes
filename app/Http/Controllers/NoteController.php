@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests\SendFormRequest;
 use App\Http\Requests\ReceiveFormRequest;
 use App\Models\Note;
+use Illuminate\Contracts\Encryption\DecryptException;
+use Illuminate\Support\Facades\Crypt;
 
 class NoteController extends Controller
 {
@@ -51,10 +53,6 @@ class NoteController extends Controller
         ]);
     }
 
-    public function test() {
-        return view('send.sent');
-    }
-
     public function receive() {
         return view('receive.receive');
     }
@@ -80,4 +78,22 @@ class NoteController extends Controller
         ]);
     }
 
+    public function read(Request $request) 
+    {
+        if ($request->noteNumber == NULL || $request->key == NULL) {
+            abort(403, 'Invalid noteNumber or key');
+        }
+
+        $note = Note::find($request->noteNumber);
+
+        if (is_null($note)) {
+            abort(403, 'Invalid noteNumber');
+        } else if ($note->key !== $request->key) {
+            abort(403, 'Invalid key');
+        }
+
+        return view('receive.read', [
+            'note' => $note,
+        ]);
+    }
 }

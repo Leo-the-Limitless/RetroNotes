@@ -103,6 +103,7 @@ body {
 }
 
 .letter-preview {
+  font-family: 'Special Elite';
   width: 55%;
   border: 3px solid #64512d;
   height: 400px;
@@ -220,4 +221,23 @@ body {
 .read-btn:hover {
   background: #F4E5BA;
   box-shadow: var(--letter-stamp-shadow);
+}
+
+.custom-note {
+  font-family: 'Special Elite';
+  width: 55%;
+  min-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #64512d;
+  box-shadow: var(--box-shadow);
+  background: #F4E5BA;
+  text-shadow: var(--text-shadow);
+}
+
+.note-names {
+  text-shadow: var(--text-shadow);
+  margin: 0;
+  font-weight: bold;
 }
