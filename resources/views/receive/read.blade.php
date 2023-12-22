@@ -6,8 +6,7 @@
   <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt="" class="letter-stamp">
   <p class="note-names">
     To <span class="ms-1">{{ $note['receiver'] }}</span>
-  </p>
-  {{ $note['note'] }}
+  </p>{{ $note['note'] }}
   <p class="note-names float-end">
     From <span class="ms-1">{{ $note['sender'] }}</span>
   </p>
