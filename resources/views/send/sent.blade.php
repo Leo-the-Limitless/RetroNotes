@@ -5,7 +5,7 @@
 <h3 class="text-center mx-auto mb-3">Note Sent!</h3>
 <h6 class="text-center mx-auto mb-3" style="color: crimson;">Note them down or snap a pic! Your person will need these detials to receive your note.<i class="fa-solid fa-circle-exclamation"></i></h6>
 <div class="mx-auto letter-preview">
-  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt="" class="letter-stamp">
+  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt={{ $note['stamp'] . '-stamp' }} class="letter-stamp">
   <div>
     <p class="credentials letter-names">
       From {{ $note['sender'] }}

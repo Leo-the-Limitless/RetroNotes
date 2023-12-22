@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="mx-auto px-4 pb-3 custom-note">
-  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt="" class="letter-stamp">
+  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt={{ $note['stamp'] . '-stamp' }} class="letter-stamp">
   <p class="note-names">
     To <span class="ms-1">{{ $note['receiver'] }}</span>
   </p>{{ $note['note'] }}

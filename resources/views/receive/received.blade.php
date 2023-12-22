@@ -4,7 +4,7 @@
 
 <h3 class="text-center mx-auto mb-3">Note Received!</h3>
 <div class="mx-auto letter-preview">
-  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt="" class="letter-stamp">
+  <img src="{{ asset('images/stamps/' . $note['stamp'] . '.png') }}" alt={{ $note['stamp'] . '-stamp' }} class="letter-stamp">
   <div>
     <p class="credentials letter-names">
       From {{ $note['sender'] }}
